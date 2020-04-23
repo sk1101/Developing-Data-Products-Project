@@ -1,0 +1,44 @@
+---
+title: "My first Shiny App - plot_function"
+author: "Shrishti Kaushik"
+date: "24/04/2020"
+output:
+  slidy_presentation: default
+  ioslides_presentation:
+    smaller: yes
+    widescreen: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(imager)
+```
+
+## Overview
+
+My shiny application can be used for plotting interactive plots by loading datsets directly from your computer. The user just has to choose a "CSV" file from their computer and then choose the variables to plot on the x-axis and the y-axis. It can be viewed here. <https://shrish11.shinyapps.io/plot_function/>.
+
+When you click the **Plot!** button an interactive plot will be generated that includes both the variables you picked.
+
+## Packages used
+
+The packages that are used in the function are:  
+
+- ggplot2
+- plotly
+
+## UI of the App
+
+This is what the app looks like running on a web browser. As you can see the user has selected a dataset, and the colomns of that dataset can then be selected from the drop down menu. Once the user has selected all the variables, by clicking on the "Plot!" button the interactive plot is generated.  
+```{r cars, echo = FALSE}
+myimg <- load.image("C:\\Users\\Shrishti\\Pictures\\Screenshots\\ddpfinal.png")
+plot(myimg,axes=FALSE)
+```
+
+## Features
+
+- The app can be used to plot any two variables of a dataset given that they are numeric
+- The plot made is an interactive plot
+- The dataset can be of any size
+
+
